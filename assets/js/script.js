@@ -34,12 +34,16 @@ for (let i = 1; i <= 100; i++) {
     box.append(i);
   if (i % 3 === 0 && i % 5 === 0) {
     box.classList.add('bg-red-ad');
-    box.innerHTML = 'FizzBuzz';
     boxes.append(box);
+    box.innerHTML = 'FizzBuzz';
   } else if (i % 3 === 0) {
-    console.log("Fizz");
+    box.classList.add('bg-green-ad');
+    boxes.append(box);
+    box.innerHTML = 'Fizz';
   } else if (i % 5 === 0) {
-    console.log("Buzz");
+    box.classList.add('bg-yellow-ad');
+    boxes.append(box);
+    box.innerHTML = 'Buzz';
   } else {
     box.classList.add('bg-lightblue-ad');
     boxes.append(box);
