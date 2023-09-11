@@ -22,6 +22,8 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 6. inserisco per ogni istruzione condizionale corrispondente, le relative classi per distinguere i multipli in oggetto.
 
+7. con innerHTML sovrascrivo il valore contenuto all'interno dell'elemento 'box' che deve essere stampato;
+
 */
 
 const boxes = document.querySelector('.boxes');
@@ -31,7 +33,9 @@ for (let i = 1; i <= 100; i++) {
     box.classList.add('box');
     box.append(i);
   if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");
+    box.classList.add('bg-red-ad');
+    box.innerHTML = 'FizzBuzz';
+    boxes.append(box);
   } else if (i % 3 === 0) {
     console.log("Fizz");
   } else if (i % 5 === 0) {
