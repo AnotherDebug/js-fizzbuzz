@@ -14,17 +14,19 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 2. dichiaro la variabile che contiene il percorso del div 'boxes';
 
+3. all'interno del mio ciclo, dichiaro una variabile dove aggiungo i div 'box';
+
 */
 
 const boxes = document.querySelector('.boxes');
 
 for (let i = 1; i <= 100; i++) {
-  if (i % 3 === 0) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
     console.log("Fizz");
   } else if (i % 5 === 0) {
     console.log("Buzz");
-  } else if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");
   } else {
     console.log(i);
   }
