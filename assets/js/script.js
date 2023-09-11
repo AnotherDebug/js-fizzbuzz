@@ -8,8 +8,8 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 1. Creare un ciclo for da 1 a 100;
 
 1a. ad ogni multiplo di 3 stampare la stringa "Fizz";
-2a. ad ogni multiplo di 5 stampare la stringa "Buzz";
-3a. se multiplo sia di 3, sia di 5 stampare "FizzBuzz".
+1b. ad ogni multiplo di 5 stampare la stringa "Buzz";
+1c. se multiplo sia di 3, sia di 5 stampare "FizzBuzz".
 
 
 2. dichiaro la variabile che contiene il percorso del div 'boxes';
