@@ -1,0 +1,36 @@
+/* !"DEBUG" DA ELIMINARE TERMINATO IL CODICE*/
+.debug {
+    background-color: rgba(0, 102, 255, 0.5);
+    border: 1px solid #000;
+}
+
+.bg-blue-ad {
+    background-color: #083b4c;
+}
+
+.bg-lightblue-ad {
+    background-color: #1389b2;
+}
+
+.bg-green-ad {
+    background-color: #0cd6a1;
+}
+
+.bg-yellow-ad {
+    background-color: #ffd166;
+}
+
+.bg-red-ad {
+    background-color: #f0466f;
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    margin: 15px;
+}
