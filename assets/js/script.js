@@ -16,11 +16,14 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 3. all'interno del mio ciclo, dichiaro una variabile dove aggiungo i div 'box';
 
+4.
+
 */
 
 const boxes = document.querySelector('.boxes');
 
 for (let i = 1; i <= 100; i++) {
+    const box = document.createElement('div');
   if (i % 3 === 0 && i % 5 === 0) {
     console.log("FizzBuzz");
   } else if (i % 3 === 0) {
