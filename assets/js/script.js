@@ -18,6 +18,10 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 4. aggiungo all'elemento div la classe 'box';
 
+5. al div box aggiungo il metodo .append() con all'interno la variabile i;
+
+6. inserisco per ogni istruzione condizionale corrispondente, le relative classi per distinguere i multipli in oggetto.
+
 */
 
 const boxes = document.querySelector('.boxes');
@@ -25,6 +29,7 @@ const boxes = document.querySelector('.boxes');
 for (let i = 1; i <= 100; i++) {
     const box = document.createElement('div');
     box.classList.add('box');
+    box.append(i);
   if (i % 3 === 0 && i % 5 === 0) {
     console.log("FizzBuzz");
   } else if (i % 3 === 0) {
@@ -32,6 +37,7 @@ for (let i = 1; i <= 100; i++) {
   } else if (i % 5 === 0) {
     console.log("Buzz");
   } else {
-    console.log(i);
+    box.classList.add('bg-lightblue-ad');
+    boxes.append(box);
   }
 }
